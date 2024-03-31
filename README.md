@@ -1,7 +1,7 @@
 # METRAN-150
 
-MCU - MCP430F149
-SPI EEPROM - 25AA160A
+  - MCU - MCP430F149
+  - SPI EEPROM - 25AA160A
 
 Reading data from EEPROM see the following /eeprom/
 
