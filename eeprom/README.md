@@ -44,5 +44,12 @@ Figure - 6 - Connecting the programmer to the sensor connector
 Figure - 7 - Connecting the programmer to chip to the CS pin
 &nbsp;
 
+<img src="images/metran150_buspirate_mcu.png" width="300" >
+Figure - 8 - Connecting BusPirate sensor connector
+&nbsp;
+
+<img src="images/metran150_buspirate_CS.png" width="300" >
+Figure - 9 - Connecting BusPirate CS pin
+&nbsp;
 
 
