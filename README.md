@@ -4,7 +4,7 @@ MCU - MCP430F149
 SPI EEPROM - 25AA160A
 
 Reading data from EEPROM see the following
-- https://github.com/lepik/metran/metran-150/eeprom/
+- https://github.com/lepik/metran-150/eeprom/
 
 <img src="images/metran-150.png" width="300" >
 Figure - 1 - General form
