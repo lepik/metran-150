@@ -12,7 +12,12 @@ The password is stored in memory at the following addresses:
   - 0x4C: 3rd digit
   - 0x4D: 4th digit
 
-# Wiring Diagram
+## Script Usage
+  - **dump_psw.py** is used to read user password from EEPROM.
+  - **dump_all_eeprom.py** is used to dump everything from the EEPROM chip into a single binary file.
+  - **bindiff.py** is used to compare binary files and display differences.
+
+## Wiring Diagram
 
 ## Microchip 25AA160A
 
