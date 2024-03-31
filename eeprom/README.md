@@ -1,6 +1,6 @@
 # EEPROM METRAN-150
 
-You can use an SPI programmer to read the memory. I used BusPirate. 
+You can use an SPI programmer to read the memory. I used [BusPirate](http://dangerousprototypes.com/docs/Bus_Pirate). 
 The connection of the programmer is described in the figures below. 
 To connect to the CS pin, you will need to solder to the chip pin.
 I wrote utilities to take a full memory dump and to read just the password using BusPirate.
