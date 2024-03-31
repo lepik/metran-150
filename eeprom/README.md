@@ -18,7 +18,6 @@ The password is stored in memory at the following addresses:
 
 <img src="images/25AA160A_characteristics.png" width="300" >
 Figure - 1 - Microchip 25AA160A  characteristics
-&nbsp;
 
 <img src="images/25AA160A_pin_diagr.png" width="300" >
 Figure - 2 - Microchip 25AA160A Pinout
