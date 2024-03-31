@@ -7,10 +7,10 @@ I wrote utilities to take a full memory dump and to read just the password using
 
 The password is stored in memory at the following addresses:
 
-  - 0x4A: 1-first digit
-  - 0x4B: 2nd digit
-  - 0x4C: 3rd digit
-  - 0x4D: 4th digit
+  - **0x4A**: 1-first digit
+  - **0x4B**: 2nd digit
+  - **0x4C**: 3rd digit
+  - **0x4D**: 4th digit
 
 ## Script Usage
   - **dump_psw.py** is used to read user password from EEPROM.
