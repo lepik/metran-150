@@ -6,10 +6,11 @@ To connect to the CS pin, you will need to solder to the chip pin.
 I wrote utilities to take a full memory dump and to read just the password using BusPirate.
 
 The password is stored in memory at the following addresses:
-0x4A: 1-first digit
-0x4B: 2nd digit
-0x4C: 3rd digit
-0x4D: 4th digit
+
+  - 0x4A: 1-first digit
+  - 0x4B: 2nd digit
+  - 0x4C: 3rd digit
+  - 0x4D: 4th digit
 
 # Wiring Diagram
 
