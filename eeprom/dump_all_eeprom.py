@@ -23,7 +23,6 @@ spi = None
 
 use_file_log = True
 file_log = 'dump_all_eeprom.log'
-file_dump = 'dump_raw_eeprom.bin'
 
 def read_eep(address, rx_bytes):
     data = bytes()
@@ -64,14 +63,24 @@ add_log_file(file_log,'Entering SPI mode...')
 spi.enter()
 add_log_file(file_log,'Configuring SPI...')
 spi.pins = spi.PIN_POWER | spi.PIN_CS
-spi.speed = '125kHz'
+spi.speed = '30kHz'
 spi.config = spi.CFG_PUSH_PULL | spi.CFG_CLK_EDGE
 add_log_file(file_log,'Reading EEPROM...')
+
+#Read serial number
+str_sn_int = '000000000'
+eep_sn_addr = [0x00, 0x32]
+rx_sn_data = read_eep(eep_sn_addr, 3)
+str_sn_int = str(int.from_bytes(rx_sn_data, 'big'))
+add_log_file(file_log,'Device serial number: ' + str_sn_int)
+
+#Read alldata eeprom
 eep_addr = [0x00, 0x00]
 rxdata = read_eep(eep_addr, 2048)
+
+file_dump = 'dump_raw_eeprom_'+str_sn_int+'.bin'
 add_log_file(file_log,'Save raw data from eeprom: ' + file_dump)
 save_dump_file(file_dump, rxdata)
 add_log_file(file_log,'Disconnect BusPirate...')
 spi.disconnect()
-
 
