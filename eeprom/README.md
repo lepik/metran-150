@@ -16,6 +16,8 @@ The password is stored in memory at the following addresses:
   - **dump_psw.py** is used to read user password from EEPROM.
   - **dump_all_eeprom.py** is used to dump everything from the EEPROM chip into a single binary file.
   - **bindiff.py** is used to compare binary files and display differences.
+  - **clr_set_psw.py** is used to SET/CLEAR password and protection in EEPROM chip.
+  - **gen_psw_bytes.py** is used to generate password and protection in EEPROM chip.
 
 ## Wiring Diagram
 
